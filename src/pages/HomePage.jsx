@@ -34,7 +34,7 @@ import ServiceDisplay from "../components/Home/ServiceDisplay";
 // import CardStackScroll from "../components/Home/CardStackScroll";
 import MobileStackScroll from "../components/Home/MobileStackScroll";
 import MobileFooter from "../components/MobileFooter";
-// import StackScroll from "./StackScroll";
+import StackScroll from "./StackScroll";
 
 const clients = [
   client1,
@@ -102,7 +102,7 @@ function HomePage() {
 
       {/* product */}
 
-      <div className="stack-scroll-container"></div>
+      <div className="stack-scroll-container"><StackScroll /></div>
 
       <MobileStackScroll />
 

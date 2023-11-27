@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { scroll, animate } from 'https://cdn.skypack.dev/motion@10.13.1';
+import { scroll, animate } from 'motion';
 import reverse from "../assets/reverse.png"
 
 
