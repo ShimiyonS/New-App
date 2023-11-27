@@ -102,7 +102,9 @@ function HomePage() {
 
       {/* product */}
 
-      <div className="stack-scroll-container"><StackScroll /></div>
+      <div className="stack-scroll-container">
+        <StackScroll />
+      </div>
 
       <MobileStackScroll />
 
