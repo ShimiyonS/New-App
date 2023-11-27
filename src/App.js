@@ -1,8 +1,8 @@
 // import "./App.css";
-// import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 // import CareerPage from "./pages/CareerPage";
 // import CommunityPage from "./pages/CommunityPage";
-// import HomePage from "./pages/HomePage";
+import HomePage from "./pages/HomePage";
 // import ProductPage from "./pages/ProductPage";
 // import ProjectPage from "./pages/ProjectPage";
 // import ServicePage from "./pages/ServicePage";
@@ -22,8 +22,8 @@ function App() {
       <h1>hello</h1>
       {/* {/* <StackScroll />  */}
       {/* <Box1 />  */}
-       {/* <Routes> */}
-        {/* <Route path="/" element={<HomePage />} />  */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
         {/* <Route path="/career" element={<CareerPage />} />
         <Route path="/community" element={<CommunityPage />} />
         <Route path="/product" element={<ProductPage />} />
@@ -35,7 +35,7 @@ function App() {
         <Route path="/service" element={<ServicePage />} />
         <Route path="service/:serviceName" element={<SpecificService />} /> 
         <Route path="/whatsnew" element={<WhatsNewPage />} />  */}
-      {/* </Routes> */}
+      </Routes>
     </div>
   );
 }
