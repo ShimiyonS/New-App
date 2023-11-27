@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .one{
+            background-color: aquamarine;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .line{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .line1{
+            width: 80%;
+            height: 1px;
+            background-color: blue;
+        }
+        .content{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container{
+          display: grid;
+          height: 100%;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1.5rem;
+          padding: 30px;
+        }
+
+        body{
+          /* background-color: antiquewhite; */
+          min-height: 100vh;
+        }
+
+        .cards{
+          width: min(95%, 70rem);
+          height: auto;
+          min-height: 250px;
+          background-color: hotpink;
+          margin-inline: auto;
+          border-radius: 15px;
+          padding: 15px;
+        }
+
+        .col-span{
+          grid-column: span 2;
+        }
+
+
+        .row-span{
+          height: 100%;
+          grid-row: span 2;
+        }
+
+        .boxes{
+          width: 90%;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          /* background-color: aqua; */
+          min-height: 100vh;
+          gap: 40px;
+        }
+
+        .box{
+          border-radius: 24px;
+          width: 50%;
+          background-color: aquamarine;
+          height: 518px;
+        }
+
+       .right{
+        /* background-color: aqua; */
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+       }
+
+       .top{
+        width: 100%;
+        height: 50%;
+        /* background-color: blue; */
+        display: flex;
+        gap: 30px;
+       }
+
+       .box1{
+        width: 50%;
+        height: 100%;
+        background-color: brown;
+       }
+
+       .bottom{
+        width: 100%;
+        height: 50%;
+        background-color: blueviolet;
+       }
+
+       .auto-play-box{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+       }
+
+       .left{
+        width: 50%;
+        height: 100%;
+        /* background-color: aquamarine; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       
+       .right{
+        width: 50%;
+        height: 100%;
+        /* background-color:blueviolet; */
+        padding: 30px;
+       }
+
+       .img-container{
+        width: 50%;
+        height: 60%;
+        animation: autoplay-animate 45s linear infinite;
+        /* position: relative; */
+       }
+
+       .img-container > img{
+        /* position: absolute; */
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+       }
+
+       .autoplay-text{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        gap: 30px;
+        
+       }
+
+       .autoplay-text p{
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #bcbcbc;
+       }
+
+       .autoplay-text p:nth-child(1){
+        animation: autoplay-animate-text1 45s linear infinite;
+       }
+
+       .autoplay-text p:nth-child(2){
+        animation: autoplay-animate-text2 45s linear infinite;
+       }
+
+       .autoplay-text p:nth-child(3){
+        animation: autoplay-animate-text3 45s linear infinite;
+       }
+
+       .autoplay-text p:nth-child(4){
+        animation: autoplay-animate-text4 45s linear infinite;
+       }
+
+       .autoplay-text p:nth-child(5){
+        animation: autoplay-animate-text5 45s linear infinite;
+       }
+
+       /* .autoplay-text p:nth-child(6){
+        animation: autoplay-animate-text6 30s ease-in-out infinite;
+       } */
+
+       .line{
+        height: 3px;
+        width: 100%;
+        background-color: aqua;
+       }
+
+       @keyframes autoplay-animate {
+        0%{
+          background-color: red;
+        }
+        25%{
+          background-color: green;
+        }50%{
+          background-color: blue;
+        }75%{
+          background-color: yellow;
+        }100%{
+          background-color: grey;
+        }
+       }
+
+
+
+       /* @keyframes autoplay-animate-text1 {
+        0%{
+         color: red;
+        }
+        25%{
+         color: #bcbcbc;
+        }75%{
+          color: #bcbcbc;
+        }50%{
+         color: #bcbcbc;
+        }100%{
+          color: #bcbcbc;
+        }
+       }
+
+       @keyframes autoplay-animate-text2 {
+        0%{
+         color: #bcbcbc;
+        }
+        25%{
+         color: green;
+        }75%{
+          color: #bcbcbc;
+        }50%{
+         color: #bcbcbc;
+        }100%{
+          color: #bcbcbc;
+        }
+       }
+
+       @keyframes autoplay-animate-text3 {
+        0%{
+         color: #bcbcbc;
+        }
+        25%{
+         color: #bcbcbc;
+        }50%{
+          color: blue;
+        }75%{
+         color: #bcbcbc;
+        }100%{
+          color: #bcbcbc;
+        }
+       }
+
+       @keyframes autoplay-animate-text4 {
+        0%{
+         color: #bcbcbc;
+        }
+        25%{
+         color: #bcbcbc;
+        }50%{
+          color: #bcbcbc;
+        }75%{
+         color: yellow;
+        }100%{
+          color: #bcbcbc;
+        }
+       }
+
+       @keyframes autoplay-animate-text5 {
+        0%{
+         color: #bcbcbc;
+        }
+        25%{
+         color: #bcbcbc;
+        }50%{
+          color: #bcbcbc;
+        }75%{
+         color: #bcbcbc;
+        }100%{
+          color: grey;
+        }
+       } */
+       
+       
+      
+    </style>
+</head>
+<body>
+ <!-- <div class="container">
+  <div class="cards">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore modi blanditiis a incidunt odio laboriosam sint at? Inventore optio illum culpa deserunt doloremque harum labore eum et, consectetur, cumque adipisci?</p>
+  </div>
+  <div class="cards col-span">
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam nam vero commodi minus qui natus voluptates sequi amet adipisci ipsum. Voluptas unde ipsam quas eum aut aliquam odio similique dolorum!</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis officiis ad maiores incidunt, consequuntur, odit velit ullam reprehenderit ex commodi aspernatur doloribus sit natus dignissimos earum fugit accusantium error at.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis officiis ad maiores incidunt, consequuntur, odit velit ullam reprehenderit ex commodi aspernatur doloribus sit natus dignissimos earum fugit accusantium error at.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis officiis ad maiores incidunt, consequuntur, odit velit ullam reprehenderit ex commodi aspernatur doloribus sit natus dignissimos earum fugit accusantium error at.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis officiis ad maiores incidunt, consequuntur, odit velit ullam reprehenderit ex commodi aspernatur doloribus sit natus dignissimos earum fugit accusantium error at.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis officiis ad maiores incidunt, consequuntur, odit velit ullam reprehenderit ex commodi aspernatur doloribus sit natus dignissimos earum fugit accusantium error at.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis officiis ad maiores incidunt, consequuntur, odit velit ullam reprehenderit ex commodi aspernatur doloribus sit natus dignissimos earum fugit accusantium error at.</p>
+  </div>
+  <div class="cards col-span">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tenetur amet, recusandae, molestiae, vitae iste facere accusamus quaerat illum itaque nulla sequi aperiam enim sapiente illo voluptatem quisquam consequatur natus?</p>
+  </div>
+  <div class="cards row-span">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit amet quibusdam veniam accusantium libero tempora consequuntur, eaque quidem debitis, dolores voluptas molestiae, architecto illum ut doloribus earum aliquid dolore iure!</p>
+  </div>
+  <div class="cards">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis sit neque libero, quasi, quisquam officia ducimus ab minus obcaecati sunt voluptate at vitae labore praesentium veniam quia. Praesentium, cum ab?
+  </div>
+  <div class="cards">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, natus perspiciatis! Consequatur incidunt nobis, omnis accusamus minus soluta ullam suscipit quis necessitatibus eum magnam fugit hic sint nisi perspiciatis magni.
+  </div>
+ </div> -->
+  <!-- <div class="one">
+      <div class="line">
+        <div class="line1"></div>
+      </div>
+      <div class="content">
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+      </div>
+      <div class="line">
+        <div class="line1"></div>
+      </div>
+    </div> -->
+    <!-- <div class="boxes">
+      <div class="box left"></div>
+      <div class="box right">
+        <div class="top">
+          <div class="box1"></div>
+          <div class="box1"></div>
+        </div>
+        <div class="bottom"></div>
+      </div>
+    </div> -->
+
+    <div class="auto-play-box">
+      <div class="left">
+        <div class="img-container">
+        <!-- <img src="https://cdna.artstation.com/p/assets/images/images/000/990/038/large/rodney-amirebrahimi-bb10.jpg?1437660323" alt=""> -->
+        <!-- <img src="https://m.media-amazon.com/images/M/MV5BMTQ4NjIyODA5MV5BMl5BanBnXkFtZTcwNzE2NTc0Mg@@._V1_UY1200_CR585,0,630,1200_AL_.jpg" alt=""> -->
+        <!-- <img src="https://i.ytimg.com/vi/JXMIpHDgb2A/maxresdefault.jpg" alt=""> -->
+        </div>
+      </div>
+      <div class="right">
+        <div class="autoplay-text">
+          <p>Machine Design</p>
+        <div class="line"></div>
+          <p>CAD modeling</p>
+        <div class="line"></div>
+          <p>ansys</p>
+        <div class="line"></div>
+          <p>prototyping</p>
+        <div class="line"></div>
+          <p>project documentation</p>
+        <div class="line"></div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

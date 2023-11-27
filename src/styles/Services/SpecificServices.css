@@ -1,0 +1,241 @@
+.specific-service-section1 {
+    min-height: calc(100vh - 109px);
+    width: 100%;
+    background-color: #0D0225;
+}
+
+.specific-service-overlay {
+    width: 90%;
+    min-height: calc(100vh - 109px);
+    margin: 0 auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    padding-bottom: 5%;
+    padding-top: 1%;
+}
+
+.specific-service-title {
+    color: #FFF;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.specific-service-overview {
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.specific-service-desc {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 179%;
+}
+
+.get-a-free-quote {
+    border-radius: 10px;
+    background: #0047FF;
+    width: 280px;
+    padding: 12px;
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.specific-service-content {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.specific-service-content-left {
+    width: 60%;
+}
+
+.specific-service-content-right {
+    width: 30%;
+    /* background-color: #0047FF; */
+}
+
+.specific-service-content-img-box {
+    width: 100%;
+    height: 100%;
+}
+
+.specific-service-content-img-box>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.specific-service-section2 {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+    /* background-color: #0047FF; */
+}
+
+.what-we-do-grid {
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 80px;
+}
+
+.whatwedo {
+    color: #0D0225;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 60px;
+}
+
+.what-we-do-box {
+    width: 48%;
+}
+
+.what-title {
+    color: #0D0225;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.what-para>p {
+    color: #6B6084;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 179%;
+}
+
+.free-quote {
+    color: #0047FF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* what we do accordion for mobile */
+
+
+.accordion-title {
+    color: #0D0225;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.what-we-accordion-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-para>p {
+    color: #6B6084;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 179%;
+}
+
+.what-we-do-accordion-container {
+    display: none;
+}
+
+.accordion-btn {
+    border-radius: 6px;
+    background: #0047FF;
+    width: 140px;
+    height: 40px;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 480px) {
+    /* .specific-service-content {
+        flex-direction: column-reverse;
+        padding: 30px;
+    }
+
+    .specific-service-overlay {
+        width: 100%;
+    }
+
+    .specific-service-content-left {
+        width: 100%;
+    }
+
+    .specific-service-content-right {
+        width: 100%;
+    }
+
+    .specific-service-title {
+        font-size: 4rem;
+    } */
+
+    .whatwedo {
+        color: #0D0225;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .get-a-free-quote {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .whatwedo {
+        font-size: 3rem;
+    }
+
+    .what-we-do-grid {
+        display: none;
+        margin-top: 60px;
+        flex-direction: column;
+    }
+
+    .what-we-do-box {
+        width: 100%;
+    }
+
+    .what-we-do-accordion-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-top: 40px;
+    }
+}
