@@ -1,7 +1,7 @@
-import React, { useEffect, } from "react";
+import React, { useEffect } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import "../styles/Home.css"
+import "../styles/Home.css";
 import Marquee from "react-fast-marquee";
 import client1 from "../assets/client1.png";
 import client2 from "../assets/client2.png";
@@ -29,18 +29,34 @@ import Four from "../components/Home/Four";
 import Testimonials from "../components/Home/Testimonials";
 import ServiceDisplay from "../components/Home/ServiceDisplay";
 
-
 // import { graphcms, QUERY_SLUG_CATEGORIES } from "../Graphql/Queries";
 // import StackScroll from "./StackScroll";
 // import CardStackScroll from "../components/Home/CardStackScroll";
 import MobileStackScroll from "../components/Home/MobileStackScroll";
 import MobileFooter from "../components/MobileFooter";
-import StackScroll from "./StackScroll";
+// import StackScroll from "./StackScroll";
 
 const clients = [
-  client1, client2, client3, client4, client5, client6, client7, client8, client9,
-  client10, client11, client12, client13, client14, client15, client16, client17,
-  client18, client19, client20
+  client1,
+  client2,
+  client3,
+  client4,
+  client5,
+  client6,
+  client7,
+  client8,
+  client9,
+  client10,
+  client11,
+  client12,
+  client13,
+  client14,
+  client15,
+  client16,
+  client17,
+  client18,
+  client19,
+  client20,
 ];
 
 // const proDetails = [
@@ -63,7 +79,6 @@ const clients = [
 // ]
 
 function HomePage() {
-
   useEffect(() => {
     console.log("home useEffect rendered!!!");
     console.log(process.env.REACT_APP_API);
@@ -87,12 +102,9 @@ function HomePage() {
 
       {/* product */}
 
-      <div className="stack-scroll-container">
-        <StackScroll />
-      </div>
+      <div className="stack-scroll-container">{/* <StackScroll /> */}</div>
 
       <MobileStackScroll />
-
 
       {/* client */}
 
@@ -101,22 +113,41 @@ function HomePage() {
           <div className="clientText">Our Clients</div>
 
           <div className="one">
-            <div className="line"><div className="line1"></div></div>
-            <Marquee style={{ overflow: 'hidden' }} gradient={true} >
-              {
-                clients.map((img, index) => (
-                  <div className="marquee-margin" style={{ height: '60px', marginLeft: '50px', }} key={index}>
-                    <img src={img} alt="" className="client-marquee" />
-                  </div>
-                ))
-              }
+            <div className="line">
+              <div className="line1"></div>
+            </div>
+            <Marquee style={{ overflow: "hidden" }} gradient={true}>
+              {clients.map((img, index) => (
+                <div
+                  className="marquee-margin"
+                  style={{ height: "60px", marginLeft: "50px" }}
+                  key={index}
+                >
+                  <img src={img} alt="" className="client-marquee" />
+                </div>
+              ))}
             </Marquee>
-            <div className="line"><div className="line1"></div></div>
+            <div className="line">
+              <div className="line1"></div>
+            </div>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', width: '100%', justifyContent: 'center' }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              width: "100%",
+              justifyContent: "center",
+            }}
+          >
             <p className="clientPara">
-              Lorem ipsum dolor sit amet consectetur. Nibh orci donec in ante cursus tempor adipiscing. A turpis vitae fermentum nulla ac in duis proin amet. Magna a amet sed imperdiet. Elit nisl nisl fermentum lectus id nibh at odio. Ullamcorper pellentesque faucibus egestas pulvinar imperdiet ut. Duis massa luctus imperdiet sit purus vulputate. Dui at euismod nunc turpis auctor lobortis.
+              Lorem ipsum dolor sit amet consectetur. Nibh orci donec in ante
+              cursus tempor adipiscing. A turpis vitae fermentum nulla ac in
+              duis proin amet. Magna a amet sed imperdiet. Elit nisl nisl
+              fermentum lectus id nibh at odio. Ullamcorper pellentesque
+              faucibus egestas pulvinar imperdiet ut. Duis massa luctus
+              imperdiet sit purus vulputate. Dui at euismod nunc turpis auctor
+              lobortis.
             </p>
           </div>
         </div>
@@ -157,10 +188,8 @@ function HomePage() {
       <Footer />
 
       <MobileFooter />
-
     </>
   );
 }
 
 export default HomePage;
-
