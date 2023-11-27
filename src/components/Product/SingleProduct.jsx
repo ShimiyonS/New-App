@@ -133,7 +133,7 @@ export default function SingleProduct() {
                 <div style={{ width: '100%', textAlign: 'end', fontSize: '18px', fontWeight: '900', color: 'rgba(13, 2, 37, 0.20)' }}>Rotate the Object for Real Experience</div>
             </div> */}
 
-      <Model />
+      {/* <Model /> */}
       <div className="rotate-text">
         <div className="mobile-rotate-text">
           Rotate the Object for Real Experience
