@@ -1,30 +1,29 @@
-// import "./App.css";
+import "./App.css";
 import { Routes, Route } from "react-router-dom";
-// import CareerPage from "./pages/CareerPage";
-// import CommunityPage from "./pages/CommunityPage";
+import CareerPage from "./pages/CareerPage";
+import CommunityPage from "./pages/CommunityPage";
 import HomePage from "./pages/HomePage";
-// import ProductPage from "./pages/ProductPage";
-// import ProjectPage from "./pages/ProjectPage";
-// import ServicePage from "./pages/ServicePage";
-// import WhatsNewPage from "./pages/WhatsNewPage";
-// import ResourcePage from "./pages/ResourcePage";
-// import SingleProduct from "./components/Product/SingleProduct";
-// import StackingAndResizingCards from "./components/Home/ImageSlider";
-// import CaseStudy from "./pages/CaseStudy";
-// import CaseTechnology from "./components/CaseStudy/CaseTechnology";
+import ProductPage from "./pages/ProductPage";
+import ProjectPage from "./pages/ProjectPage";
+import ServicePage from "./pages/ServicePage";
+import WhatsNewPage from "./pages/WhatsNewPage";
+import ResourcePage from "./pages/ResourcePage";
+import SingleProduct from "./components/Product/SingleProduct";
+import StackingAndResizingCards from "./components/Home/ImageSlider";
+import CaseStudy from "./pages/CaseStudy";
+import CaseTechnology from "./components/CaseStudy/CaseTechnology";
 // import Box1 from "./pages/Box1";
-// import SpecificService from "./components/Services/SpecificService";
+import SpecificService from "./components/Services/SpecificService";
 // import StackScroll from "./pages/StackScroll";
 
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
       {/* {/* <StackScroll />  */}
       {/* <Box1 />  */}
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/career" element={<CareerPage />} />
+        <Route path="/career" element={<CareerPage />} />
         <Route path="/community" element={<CommunityPage />} />
         <Route path="/product" element={<ProductPage />} />
         <Route path="/product/:productName" element={<SingleProduct />} />
@@ -33,8 +32,8 @@ function App() {
         <Route path="case-study" element={<CaseStudy />} />
         <Route path="case-study/" element={<CaseStudy />} />
         <Route path="/service" element={<ServicePage />} />
-        <Route path="service/:serviceName" element={<SpecificService />} /> 
-        <Route path="/whatsnew" element={<WhatsNewPage />} />  */}
+        <Route path="service/:serviceName" element={<SpecificService />} />
+        <Route path="/whatsnew" element={<WhatsNewPage />} />
       </Routes>
     </div>
   );
