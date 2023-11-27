@@ -22,76 +22,88 @@ const productData = [
   {
     id: 1,
     img: chililanding,
-    color: '#F0F3FD',
-    bigText1: 'chili ladling',
-    productName: 'Chilli Ladling Machine',
-    productDescription: 'Lorem ipsum dolor sit amet consectetur. Ullamcorper eu egestas tempor nunc nec habitant. Dolor vulputate tempor sagittis et maecenas praesent congue ac. Blandit in sagittis sem quis lectus aliquam. Lorem ipsum dolor sit amet consectetur. '
+    color: "#F0F3FD",
+    bigText1: "chili ladling",
+    productName: "Chilli Ladling Machine",
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur. Ullamcorper eu egestas tempor nunc nec habitant. Dolor vulputate tempor sagittis et maecenas praesent congue ac. Blandit in sagittis sem quis lectus aliquam. Lorem ipsum dolor sit amet consectetur. ",
   },
   {
     id: 2,
     img: slicing,
-    color: '#EAEFFC',
-    bigText1: 'precision',
-    bigText2: 'slicing',
-    productName: 'Precision Slicing Machine',
-    productDescription: 'Lorem ipsum dolor sit amet consectetur. Ullamcorper eu egestas tempor nunc nec habitant. Dolor vulputate tempor sagittis et maecenas praesent congue ac. Blandit in sagittis sem quis lectus aliquam. Lorem ipsum dolor sit amet consectetur. '
+    color: "#EAEFFC",
+    bigText1: "precision",
+    bigText2: "slicing",
+    productName: "Precision Slicing Machine",
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur. Ullamcorper eu egestas tempor nunc nec habitant. Dolor vulputate tempor sagittis et maecenas praesent congue ac. Blandit in sagittis sem quis lectus aliquam. Lorem ipsum dolor sit amet consectetur. ",
   },
   {
     id: 3,
     img: spinach,
-    color: '#E5EAFA',
-    bigText1: 'spinach',
-    bigText2: 'cleaning',
-    productName: 'Spinach Cleaning Machine',
-    productDescription: 'Lorem ipsum dolor sit amet consectetur. Ullamcorper eu egestas tempor nunc nec habitant. Dolor vulputate tempor sagittis et maecenas praesent congue ac. Blandit in sagittis sem quis lectus aliquam. Lorem ipsum dolor sit amet consectetur. '
+    color: "#E5EAFA",
+    bigText1: "spinach",
+    bigText2: "cleaning",
+    productName: "Spinach Cleaning Machine",
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur. Ullamcorper eu egestas tempor nunc nec habitant. Dolor vulputate tempor sagittis et maecenas praesent congue ac. Blandit in sagittis sem quis lectus aliquam. Lorem ipsum dolor sit amet consectetur. ",
   },
   {
     id: 4,
     img: baling,
-    color: '#E0E5F8',
-    bigText1: 'stacia baling',
-    productName: 'Stacia Baling Machine',
-    productDescription: 'Lorem ipsum dolor sit amet consectetur. Ullamcorper eu egestas tempor nunc nec habitant. Dolor vulputate tempor sagittis et maecenas praesent congue ac. Blandit in sagittis sem quis lectus aliquam. Lorem ipsum dolor sit amet consectetur. '
+    color: "#E0E5F8",
+    bigText1: "stacia baling",
+    productName: "Stacia Baling Machine",
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur. Ullamcorper eu egestas tempor nunc nec habitant. Dolor vulputate tempor sagittis et maecenas praesent congue ac. Blandit in sagittis sem quis lectus aliquam. Lorem ipsum dolor sit amet consectetur. ",
   },
   {
     id: 5,
     img: child,
-    color: '#DBE1F7',
-    bigText1: 'child',
-    productName: 'Stacia Child Tracking System',
-    productDescription: 'Lorem ipsum dolor sit amet consectetur. Ullamcorper eu egestas tempor nunc nec habitant. Dolor vulputate tempor sagittis et maecenas praesent congue ac. Blandit in sagittis sem quis lectus aliquam. Lorem ipsum dolor sit amet consectetur. '
+    color: "#DBE1F7",
+    bigText1: "child",
+    productName: "Stacia Child Tracking System",
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur. Ullamcorper eu egestas tempor nunc nec habitant. Dolor vulputate tempor sagittis et maecenas praesent congue ac. Blandit in sagittis sem quis lectus aliquam. Lorem ipsum dolor sit amet consectetur. ",
   },
   {
     id: 6,
     img: speaker,
-    color: '#D5DCF5',
-    bigText1: 'connect s',
-    productName: 'Connect S',
-    productDescription: 'Lorem ipsum dolor sit amet consectetur. Ullamcorper eu egestas tempor nunc nec habitant. Dolor vulputate tempor sagittis et maecenas praesent congue ac. Blandit in sagittis sem quis lectus aliquam. Lorem ipsum dolor sit amet consectetur. '
+    color: "#D5DCF5",
+    bigText1: "connect s",
+    productName: "Connect S",
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur. Ullamcorper eu egestas tempor nunc nec habitant. Dolor vulputate tempor sagittis et maecenas praesent congue ac. Blandit in sagittis sem quis lectus aliquam. Lorem ipsum dolor sit amet consectetur. ",
   },
   {
     id: 7,
     img: stove,
-    color: '#D0D7F3',
-    bigText1: 'burner stove',
-    productName: 'Butterfly 3-burner Stove',
-    productDescription: 'Lorem ipsum dolor sit amet consectetur. Ullamcorper eu egestas tempor nunc nec habitant. Dolor vulputate tempor sagittis et maecenas praesent congue ac. Blandit in sagittis sem quis lectus aliquam. Lorem ipsum dolor sit amet consectetur. '
-  }
+    color: "#D0D7F3",
+    bigText1: "burner stove",
+    productName: "Butterfly 3-burner Stove",
+    productDescription:
+      "Lorem ipsum dolor sit amet consectetur. Ullamcorper eu egestas tempor nunc nec habitant. Dolor vulputate tempor sagittis et maecenas praesent congue ac. Blandit in sagittis sem quis lectus aliquam. Lorem ipsum dolor sit amet consectetur. ",
+  },
 ];
 
-
 function ProductPage() {
-
   // const navigate = useNavigate();
 
   return (
     <>
-      <div className="nav_style"><NavBar /></div>
+      <div className="nav_style">
+        <NavBar />
+      </div>
       <div className="product_container">
         <div className="product_section p-section">
           <div className="product_text">Stacia Corp Products</div>
           <div className="product_description">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error consectetur dolores possimus quasi accusantium, suscipit doloribus placeat rerum corrupti. Laudantium illo sunt dolore, similique repellendus blanditiis ex dolorem facere quasi?</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+              consectetur dolores possimus quasi accusantium, suscipit doloribus
+              placeat rerum corrupti. Laudantium illo sunt dolore, similique
+              repellendus blanditiis ex dolorem facere quasi?
+            </p>
           </div>
         </div>
 
@@ -99,14 +111,23 @@ function ProductPage() {
         <div className="p-section">
           <div className="p-top">
             <div className="p-name">One Dril</div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellendus laudantium commodi? Culpa fuga velit ipsam qui voluptates unde illum nulla praesentium consectetur eligendi a, pariatur hic aspernatur magni nemo!</p>
-            <Link to={`/product/One Drill`} onClick={() => window.scrollTo(0, 0)} className="learn-more-btn">Learn more</Link>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              repellendus laudantium commodi? Culpa fuga velit ipsam qui
+              voluptates unde illum nulla praesentium consectetur eligendi a,
+              pariatur hic aspernatur magni nemo!
+            </p>
+            <Link
+              to={`/product/One Drill`}
+              onClick={() => window.scrollTo(0, 0)}
+              className="learn-more-btn"
+            >
+              Learn more
+            </Link>
           </div>
           <div className="p-bottom">
             <div className="p-mask">
-              <div className="product-name">
-                One dril
-              </div>
+              <div className="product-name">One dril</div>
             </div>
           </div>
         </div>
@@ -116,9 +137,6 @@ function ProductPage() {
         {/* <ProductComponent1 bgColor={'#F9F6FF'} bigText={'chili ladling'} productName={'Chili Ladling Machine'} productImg={chililanding} /> */}
 
         {/* product 3 */}
-
-
-
 
         {/* <div className="p-section pro3">
           <div className="product-name p1">Precision</div>
@@ -136,7 +154,6 @@ function ProductPage() {
           </div>
         </div> */}
 
-
         {/* <ProductComponent2 bgColor={'#F3EDFF'} bigText1={'Precision'} bigText2={'Slicing'} productImg={slicing} />
         <ProductComponent2 bgColor={'#ECE3FF'} bigText1={'Spinach'} bigText2={'Cleaning'} productImg={spinach} />
 
@@ -145,16 +162,15 @@ function ProductPage() {
         <ProductComponent1 bgColor={'#D9C6FF'} bigText={'connect s'} productImg={speaker} productName={'Connect S'} />
         <ProductComponent1 bgColor={'#D2BDFF'} bigText={'3-Burner'} productImg={stove} productName={'Butterfly 3-Burner Stove'} /> */}
 
-        {
-          productData.map((data) => (
-            <ProductComponent2 bigText1={data.bigText1} productName={data.productName}
-              productImg={data.img} bigText2={data.bigText2} bgColor={data.color}
-            />
-          ))
-        }
-
-
-
+        {productData.map((data) => (
+          <ProductComponent2
+            bigText1={data.bigText1}
+            productName={data.productName}
+            productImg={data.img}
+            bigText2={data.bigText2}
+            bgColor={data.color}
+          />
+        ))}
       </div>
       <MobileProduct />
       <Footer />
@@ -162,6 +178,5 @@ function ProductPage() {
     </>
   );
 }
-
 
 export default ProductPage;
