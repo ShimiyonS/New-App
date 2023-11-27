@@ -23,7 +23,7 @@ function App() {
       {/* <Box1 />  */}
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/career" element={<CareerPage />} />
+        {/* <Route path="/career" element={<CareerPage />} />
         <Route path="/community" element={<CommunityPage />} />
         <Route path="/product" element={<ProductPage />} />
         <Route path="/product/:productName" element={<SingleProduct />} />
@@ -33,7 +33,7 @@ function App() {
         <Route path="case-study/" element={<CaseStudy />} />
         <Route path="/service" element={<ServicePage />} />
         <Route path="service/:serviceName" element={<SpecificService />} />
-        <Route path="/whatsnew" element={<WhatsNewPage />} />
+        <Route path="/whatsnew" element={<WhatsNewPage />} /> */}
       </Routes>
     </div>
   );
