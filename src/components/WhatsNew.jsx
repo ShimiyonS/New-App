@@ -108,9 +108,9 @@ const whatsNewData = [
 ];
 
 export default function WhatsNew() {
-  const [ setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [whatsNew, setWhatsNew] = useState([]);
-  const [ setParams1] = useState("events");
+  const [params1, setParams1] = useState("events");
 
   const setParams = (query) => {
     console.log(query);
@@ -121,7 +121,7 @@ export default function WhatsNew() {
 
   useEffect(() => {
     setParams("events");
-  });
+  },[]);
 
   console.log(whatsNew);
 
