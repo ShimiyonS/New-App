@@ -84,7 +84,7 @@ a.active {
   cursor: pointer;
 }
 
-[id^=btn]:checked~.dropdown-links {
+[id^="btn"]:checked ~ .dropdown-links {
   display: flex;
   cursor: pointer;
 }
@@ -118,13 +118,13 @@ a.active {
   height: 100%;
   top: 0;
   left: 0;
-  border-left: 4px solid #0047FF;
-  border-top-left-radius: 4+px;
+  border-left: 4px solid #0047ff;
+  border-top-left-radius: 4 + px;
   border-bottom-left-radius: 4px;
 }
 
 .drop-items:hover {
-  background-color: #EAEFFC;
+  background-color: #eaeffc;
   border-radius: 4px;
 }
 
@@ -162,7 +162,7 @@ a.active {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  border-bottom: 1px solid #CADBEA;
+  border-bottom: 1px solid #cadbea;
   padding: 25px 0px;
   cursor: pointer;
 }
@@ -181,8 +181,6 @@ a.active {
   background-color: pink;
   border-radius: 20px;
 }
-
-
 
 .whats-new-grid {
   /* width: 90%;
@@ -210,7 +208,7 @@ a.active {
   border-radius: 20px;
 }
 
-.whats-new-grid-left>img {
+.whats-new-grid-left > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -233,7 +231,7 @@ a.active {
   border-radius: 20px;
 }
 
-.whats-new-grid-top>img {
+.whats-new-grid-top > img {
   width: 100%;
   height: 100%;
   /* object-fit: cover; */
@@ -247,7 +245,7 @@ a.active {
   border-radius: 20px;
 }
 
-.whats-new-grid-bottom>img {
+.whats-new-grid-bottom > img {
   width: 100%;
   height: 100%;
   /* object-fit: cover;--------- */
@@ -268,9 +266,7 @@ a.active {
   line-height: normal;
 } */
 
-
-@media (max-width: 480px) {
-
+@media (max-width: 786px) {
   .nav-container {
     height: 70px;
   }
@@ -300,11 +296,11 @@ a.active {
     display: none;
   }
 
-  .nav-right>div {
+  .nav-right > div {
     display: none;
   }
 
-  .nav-right>img {
+  .nav-right > img {
     width: 25px;
     height: 25px;
   }
